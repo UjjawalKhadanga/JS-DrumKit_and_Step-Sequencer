@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SilverSkull's Drum Kit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">   <!-- Montserat Font -->
+</head>
+
+<body>
+
+    <!-- Heading Section-->
+    <div id="heading"><img src="drums-icon.jpg" alt="drums-icon" id="logo">
+        <h1>JavaScript Drum Kit</h1>
+    </div>
+    <!--..........................................-->
+
+
+    <!-- DrumRack -->
+    <div id="drumrack">
+        <div data-key="a" class="drum-button drum_static">Kick<br>A</div>
+        <div data-key="g" class="drum-button drum_static">Open-Hat<br>G</div>
+        <div data-key="c" class="drum-button drum_static">Snare<br>C</div>
+        <div data-key="u" class="drum-button drum_static">Hi-Hat<br>U</div>
+        <div data-key="q" class="drum-button drum_static">Perc<br>Q</div>
+    </div>
+    <!--..........................................-->
+
+
+    <!-- AudioFiles -->
+    <audio src="kit/kick.wav" data-key="a"  type="audio/wav"  ></audio>
+    <audio src="kit/openhat.wav" data-key="g"  type="audio/wav" ></audio>
+    <audio src="kit/hihat.wav" data-key="u" type="audio/wav" ></audio>
+    <audio src="kit/perc.wav" data-key="q" type="audio/wav" ></audio>
+    <audio src="kit/snare.wav" data-key="c" type="audio/wav" ></audio>
+    <!--..........................................-->
+
+    <p> Use the mentioned keyboard key to play the sound.</p>
+
+    <div id="heading" style="height: 140px;">
+        <h1>Drum Pattern Sequencer</h1>
+    </div>
+
+
+
+    <!-- StepSequencer -->
+    <div id="step-seq">
+
+        <label for="kick">Kick</label>
+        <div class="sequence" id="kick">
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+            <div class="steps kick-steps"></div>
+        </div>
+        <hr>
+        <label for="snare">Snare</label>
+        <div class="sequence" id="snare">
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+            <div class="steps snare-steps"></div>
+        </div>
+        <hr>
+        <label for="hihat">HiHat</label>
+        <div class="sequence" id="hihat">
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+            <div class="steps hihat-steps"></div>
+        </div>
+        <hr>
+        <label for="perc">Perc</label>
+        <div class="sequence" id="perc">
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+            <div class="steps perc-steps"></div>
+        </div>
+        <hr>
+        <label for="openhat">OpenHat</label>
+        <div class="sequence" id="openhat">
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+            <div class="steps openhat-steps"></div>
+        </div>
+        <hr>
+
+        <!-- Buttons -->
+        <label style="margin-right: 50px;">Controls</label>
+        <input type="number" class="sequencer-controls" id="bpm" value="130" max="200" min="50">
+        <input type="button" class="sequencer-controls" value="Play" id="play" onclick=pressplay()>
+        <input type="button" class="sequencer-controls" value="Stop" id="stop">
+        <input type="button" class="sequencer-controls" value="LoopPlay" id="loop" onclick=pressloopplay()>
+        <!--..........................................-->
+
+    </div>
+    <!--..........................................-->
+
+</body>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+<!--..........................................-->
+
+</html>
